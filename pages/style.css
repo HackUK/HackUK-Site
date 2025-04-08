@@ -1,0 +1,38 @@
+.huklogo {
+    width: 200px;
+    height: auto; 
+}
+
+
+#huklogo {
+    width: 200px; 
+    height: auto; 
+}
+
+
+img[src="huklogo.png"] {
+    width: auto; 
+    height: 40px; /* Increase height for better visibility */
+}
+
+.join-community-btn {
+    display: inline-block;
+    padding: 8px 16px; /* Smaller padding for a smaller button */
+    font-size: 14px; /* Smaller font size */
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none !important; /* Prevent underline */
+    background-color: #007aff; /* Apple-like blue */
+    color: #fff !important; /* Ensure text color remains white */
+    border-radius: 8px; /* Subtle rounded corners */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease, transform 0.4s ease; /* Smooth animation */
+}
+
+.join-community-btn:hover {
+    text-decoration: none !important; /* Prevent underline on hover */
+    color: #fff !important; /* Keep text color white on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
