@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers - HackUK</title>
+    <title>HackUK</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this is correctly linked -->
 </head>
 <body>
     <!-- Navbar -->
@@ -15,15 +15,15 @@
         <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4 py-2 fixed-top" style="max-width: 1100px; margin: 10px auto; border-radius: 16px; border: 1px solid #eee;">
             <div class="container-fluid p-0">
                 <!-- Navbar Brand -->
-                <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                    <img src="../huklogo.png" alt="HackUKLogo" style="height: 40px;" class="me-2">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="huklogo.png" alt="HackUKLogo" style="height: 40px;" class="me-2">
                 </a>
                 <!-- Navbar Links -->
                 <div class="collapse navbar-collapse justify-content-center">
                     <ul class="navbar-nav d-flex flex-row gap-4">
-                        <li class="nav-item"><a class="nav-link text-dark" href="../pages/hackathons.html">Hackathons</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="../pages/mission.html">Mission</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="../pages/team.html">Team</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="pages/hackathons.html">Hackathons</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="pages/mission.html">Mission</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="pages/team.html">Team</a></li>   
                     </ul>
                 </div>
                 <!-- Join Community Button -->
@@ -32,6 +32,26 @@
         </nav>
     </div>
     <!-- Add margin to body to prevent content from being hidden under navbar -->
+    <style>
+        body {
+            padding-top: 80px; /* Adjust this based on the navbar height */
+        }
+        .join-community-btn {
+            display: inline-block;
+            padding: 8px 16px; /* Smaller padding for a smaller button */
+            font-size: 14px; /* Smaller font size */
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007aff; /* Apple-like blue */
+            color: #fff;
+            border-radius: 8px; /* Subtle rounded corners */
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: none; /* Removed transition for hover effect */
+        }
+    </style>
+    
     <style>
         body {
             padding-top: 80px; /* Adjust this based on the navbar height */
