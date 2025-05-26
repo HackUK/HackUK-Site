@@ -15,24 +15,88 @@ img[src="huklogo.png"] {
     height: 40px; /* Increase height for better visibility */
 }
 
+/* Navbar Styles */
+.navbar {
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007aff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #007aff !important;
+}
+
+/* Mobile Navbar Styles */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 0.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Join Community Button */
 .join-community-btn {
     display: inline-block;
-    padding: 8px 16px; /* Smaller padding for a smaller button */
-    font-size: 14px; /* Smaller font size */
+    padding: 8px 16px;
+    font-size: 14px;
     font-weight: 600;
     text-align: center;
-    text-decoration: none !important; /* Prevent underline */
-    background-color: #007aff; /* Apple-like blue */
-    color: #fff !important; /* Ensure text color remains white */
-    border-radius: 8px; /* Subtle rounded corners */
+    text-decoration: none;
+    background-color: #007aff;
+    color: #fff;
+    border-radius: 8px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.4s ease, transform 0.4s ease; /* Smooth animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .join-community-btn:hover {
-    text-decoration: none !important; /* Prevent underline on hover */
-    color: #fff !important; /* Keep text color white on hover */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
-    transform: scale(1.05); /* Slightly enlarge the button */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Body padding for fixed navbar */
+body {
+    padding-top: 80px;
 }
