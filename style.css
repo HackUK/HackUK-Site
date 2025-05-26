@@ -44,16 +44,31 @@ img[src="huklogo.png"] {
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-top: 0.5rem;
+        margin-top: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
     }
 
     .navbar-nav {
-        flex-direction: column !important;
         gap: 0.5rem !important;
     }
 
     .nav-link {
-        padding: 0.5rem 0;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .join-community-btn {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
     }
 }
 
